@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 80%;
+    max-width: 1390px;
+    min-width: 1390px;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+
+/* Title Image Slide CSS */
+#wrapper{
+    overflow: hidden;
+}
+
+.image_slider img{
+    width: 100%;
+}
+
+.image_slider{
+    width: 100%;
+    display: flex;
+    animation: slide 8s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    60%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+/* Navigation */
+nav{
+    margin-top: 50px;
+    display: flex;
+}
+
+nav img{
+    width: 390px;
+    float: left;
+}
+
+.navigation{
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 300px;
+}
+
+.navigation a{
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    margin-left: 80px;
+}
+
+nav a:link {
+    color: gray;
+}
+
+nav a:visited {
+    color: gray;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav a:active{
+    color: white;
+}
+
+.category{
+    display: flex;
+    gap: 5%;
+}
+
+.category p{
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.category p a:link{
+    color: #39c5bb;
+    text-decoration: none;
+}
+
+.category p a:visited{
+    color: #39c5bb;
+}
+
+.sub_category:hover p a{
+    text-decoration: underline;
+    color: #31a8a0;
+}
+
+.title{
+    display: flex;
+    margin-left: -10px;
+}
+
+.title p{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.popular_content{
+    display: flex;
+    gap: 20px;
+}
+
+.popular_content p{
+    line-height: 1.6;
+}
+
+.popular_content p a{
+    float: right;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.popular_content p a:link{
+    color: #39c5bb;
+}
+
+.popular_content p a:visited{
+    color: #39c5bb;
+}
+
+.popular_content p a:active{
+    color: cyan;
+}
+
+.popular_content p a:hover{
+    color: #2f9790;
+}
+
+.news{
+    display: flex;
+    gap: 15px;
+}
+
+.news_content p{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.news_content p a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news_content p a:link{
+    color: #39c5bb;
+}
+
+.news_content p a:visited{
+    color: #39c5bb;
+}
+
+.news_content p a:active{
+    color: cyan;
+}
+
+.news_content p a:hover{
+    color: #2f9790;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.service_nav a{
+    font-size: 15px;
+}
+
+.service_nav a:link{
+    color: gray;
+}
+
+.service_nav a:visited{
+    color: gray;
+}
+
+.service_nav a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+/* Contact Us CSS */
+.border{
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 25px;
+    padding: 60px 50px 60px 50px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.border h1{
+    margin-bottom: 30px;
+}
+
+/* Contact Us CSS */
+form{
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+form input{
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form textarea{
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form button#submit{
+    width: 100%;
+    font-size: 1.05em;
+    font-weight: bold;
+    padding: 25px 15px 25px 15px;
+    margin-top: 25px;
+    border: cyan;
+    border-radius: 39px;
+    background-color: cyan;
+}
+
+form button#submit:hover{
+    border: rgb(0, 245, 245);
+    background-color: rgb(0, 245, 245);
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* About_us CSS */
+.about_us{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 2;
+}
+
+.about_us h2{
+    margin-bottom: 3.9px;
+    font-size: 1.6em;
+}
+
+.about_us p{
+    font-size: 1.1em;
+}
+
+/* Nendoroid CSS */
+.list{
+    display: flex;
+    gap: 5%;
+}
+
+.jpg{
+    position: relative;
+    display: inline-block;
+    width: 30%;
+}
+
+.jpg img{
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.jpg a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.05em;
+}
+
+.price{
+    font-size: 1.05em;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+
+.jpg a:link{
+    color: #000;
+}
+
+.jpg a:visited{
+    color: #000;
+}
+
+.jpg a:hover{
+    text-decoration: underline;
+}
+
+.jpg .second_jpg {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.jpg:hover .second_jpg {
+    display: inline;
+}
+
+.jpg:hover img{
+    animation: fadeIn 0.39s;
+    cursor: pointer;
+}
+
+.jpg:hover a p{
+    text-decoration: underline;
+}
+
+  @keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.list_container{
+    width: 100%;
+}
+
+.list_container h1{
+    text-align: center;
+    font-size: 2.3em;
+}
+
+.song_container{
+    width: 1390px;
+    display: flex;
+}
+
+.song_recommend p{
+    text-align: center;
+    margin-bottom: 39px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.song iframe{
+    width: 675.5px;
+    height: 379.69px;
+}
+
+/* Another */
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  /* Five columns side by side for scale figure page*/
+  .scale_figure_column{
+    float: left;
+    width: 20%;
+  }
+  
+  .scale_figure_3_column{
+    float: left;
+    width: 25%;
+  }
+
+  .re_ment_column{
+    float: left;
+    width: 11.11%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+    transition: opacity 0.5s ease;
+  }
+  
+  .active, .demo:hover {
+    opacity: 1;
+  }
+
+.description p{
+    line-height: 1.8;
+}
+
+.number{
+    width: fit-content;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+}
+
+form button#shopping_button{
+    font-size: 1em;
+    font-family: Assistant, sans-serif;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #000;
+    color: #fff;
+    width: 100%;
+}
+
+#shopping_button:hover{
+    border: 3px solid #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Other CSS */
+table{
+    width: 80%;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px dotted black;
+    padding: 5px 10px;
+    text-align: left;
+    background-color: rgb(11, 244, 244);
+}
+
+td{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+/* Thank_You.html CSS */
+.thankyou{
+    text-align: center;
+}
+
+.thankyou h1{
+    font-size: 2.3em;
+}
+
+.thankyou p{
+    font-size: 1.2em;
+}

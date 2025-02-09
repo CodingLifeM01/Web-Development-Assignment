@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="icon" type="image/x-icon" href="Gallery/logo_icon.png">
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            function contactForm() {
+                if (document.forms[0].userName.value == ""){
+                    alert("Name cannot be empty !");
+                    return false;
+                }
+                if (document.forms[0].userEmail.value == ""){
+                    alert("Email cannot be empty !");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <nav>
+            <a href="home.html"><img src="Gallery/Logo.png" alt="Miku_House_Logo"></a>
+        
+            <div class="navigation">
+                <a href="home.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+        </nav>
+        
+        <br><br>
+        <hr>
+        <br><br>
+
+        <main>
+            <div class="border">
+                <h1>Contact Form</h1>
+                <br>
+                <form action="Thank_You.html">
+                    <label for="userName">Name</label><br>
+                    <input type="text" name="userName" placeholder="Your Name" id="userName"><br><br>
+
+                    <label for="userEmail">Email</label><br>
+                    <input type="email" name="userEmail" placeholder="abcd123@gmail.com" id="userEmail"><br><br>
+                    
+                    <label for="userComments">Comments</label><br>
+                    <textarea name="userComments" placeholder="Leave your comment here!" id="userComments" rows="10" cols="80"></textarea>
+                    <br><br>
+
+                    <button id="submit" onclick="return contactForm();">Sumbit Your Comment !</button>
+                </form>
+            </div>
+
+            <br><br>
+            <hr>
+            <br><br>
+
+            <footer>
+            <p>For any inquiry, please contact <a href="mailto:colsonlau66@gmail.com">colsonlau66@gmail.com</a>.</p>
+
+            <br><br><br>
+
+            <div class="service_nav">
+                <a href="#">TERMS OF SERVICE</a>
+                <a style="margin-left: 50px;" href="#">PRIVACY POLICY</a>
+                <a style="margin-left: 50px;" href="#">RETURN & REFUND POLICY</a>
+            </div>
+
+            </footer>
+
+            <br><br><br>
+            
+            <p><i><small>&copy 2023, Miku House, All Right Reserved.</small></i></p>
+            <br><br>
+        </main>
+    </body>
+</html>
